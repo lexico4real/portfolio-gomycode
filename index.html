@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Crafting pragmatic, high-throughput backend architectures and developer tools.</p>
+            <hr>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a veteran software engineer specializing in distributed systems, robust backend architecture, and building developer-focused tooling. I believe in solving complex problems with pragmatic design, prioritizing maintainability and clean code over premature complexity.
+            </p>
+            
+            <h3>Featured Media Presentation</h3>
+            <video controls width="500">
+                <source src="presentation.mp4" type="video/mp4">
+                <source src="presentation.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <hr>
+        </section>
+
+        <section id="work">
+            <h2>Featured Work</h2>
+            <p>A selection of recent projects and open-source contributions:</p>
+            
+            <ul>
+                <li>
+                    <strong>GitSwitch CLI & Extension:</strong> An open-source developer productivity tool designed to streamline Git account switching seamlessly across terminal and editor environments.
+                </li>
+                <li>
+                    <strong>Competency Assessment Portal:</strong> A high-throughput enterprise platform built to handle real-time state synchronization and detailed skill evaluation matrices.
+                </li>
+                <li>
+                    <strong>Single Service Registration Portal:</strong> Led the architectural design for a nationwide, high-concurrency SIM registration and management platform.
+                </li>
+            </ul>
+            <hr>
+        </section>
+
+        <section id="resume">
+            <h2>Resume & Experience</h2>
+            <p>An overview of my professional trajectory and technical expertise.</p>
+            
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Timeline</th>
+                        <th>Role / Institution</th>
+                        <th>Core Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024 - Present</td>
+                        <td><strong>Engineering Lead</strong></td>
+                        <td>Technical leadership, system architecture, event-driven design, and mentoring.</td>
+                    </tr>
+                    <tr>
+                        <td>Prior Roles</td>
+                        <td><strong>Senior Software Engineer</strong></td>
+                        <td>Backend engineering, data pipeline optimization, and modular monolith systems.</td>
+                    </tr>
+                    <tr>
+                        <td>Academic</td>
+                        <td><strong>HND in Computer Science</strong></td>
+                        <td>Foundational studies in mathematics, physics, and computational logic.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p>For a detailed breakdown, you can download my full CV or reach out via the contact form below.</p>
+            <hr>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Have a project in mind or looking to collaborate? Drop a message below.</p>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    
+                    <p>
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </p>
+                    
+                    <p>
+                        <label for="subject">Subject:</label><br>
+                        <select id="subject" name="subject">
+                            <option value="collaboration">Project Collaboration</option>
+                            <option value="mentorship">Mentorship / Speaking</option>
+                            <option value="other">General Inquiry</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..." required></textarea>
+                    </p>
+                    
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Portfolio Project. Built with clean, semantic HTML.</p>
+    </footer>
+
+</body>
+</html>
