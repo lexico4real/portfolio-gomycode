@@ -4,66 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header class="main-header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Crafting pragmatic, high-throughput backend architectures and developer tools.</p>
-            <hr>
+    <main class="content-container">
+        <section id="home" class="hero-section">
+            <h1 class="hero-title">Welcome to My Portfolio</h1>
+            <p class="hero-subtitle">Crafting pragmatic, high-throughput backend architectures and developer tools.</p>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
+        <section id="about" class="portfolio-section">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-text">
                 I am a veteran software engineer specializing in distributed systems, robust backend architecture, and building developer-focused tooling. I believe in solving complex problems with pragmatic design, prioritizing maintainability and clean code over premature complexity.
             </p>
             
-            <h3>Featured Media Presentation</h3>
-            <video controls width="500">
-                <source src="presentation.mp4" type="video/mp4">
-                <source src="presentation.ogg" type="video/ogg">
-                Your browser does not support the video tag.
-            </video>
-            <hr>
+            <h3 class="subsection-title">Featured Media Presentation</h3>
+            <div class="video-wrapper">
+                <video controls width="100%" class="featured-video">
+                    <source src="presentation.mp4" type="video/mp4">
+                    <source src="presentation.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </section>
 
-        <section id="work">
-            <h2>Featured Work</h2>
-            <p>A selection of recent projects and open-source contributions:</p>
+        <section id="work" class="portfolio-section">
+            <h2 class="section-title">Featured Work</h2>
+            <p class="section-text">A selection of recent projects and open-source contributions:</p>
             
-            <ul>
-                <li>
+            <ul class="project-list">
+                <li class="project-item">
                     <strong>GitSwitch CLI & Extension:</strong> An open-source developer productivity tool designed to streamline Git account switching seamlessly across terminal and editor environments.
                 </li>
-                <li>
+                <li class="project-item">
                     <strong>Competency Assessment Portal:</strong> A high-throughput enterprise platform built to handle real-time state synchronization and detailed skill evaluation matrices.
                 </li>
-                <li>
+                <li class="project-item">
                     <strong>Single Service Registration Portal:</strong> Led the architectural design for a nationwide, high-concurrency SIM registration and management platform.
                 </li>
             </ul>
-            <hr>
         </section>
 
-        <section id="resume">
-            <h2>Resume & Experience</h2>
-            <p>An overview of my professional trajectory and technical expertise.</p>
+        <section id="resume" class="portfolio-section">
+            <h2 class="section-title">Resume & Experience</h2>
+            <p class="section-text">An overview of my professional trajectory and technical expertise.</p>
             
-            <table border="1" cellpadding="10" cellspacing="0">
+            <table class="resume-table">
                 <thead>
                     <tr>
                         <th>Timeline</th>
@@ -89,52 +92,49 @@
                     </tr>
                 </tbody>
             </table>
-            <br>
-            <p>For a detailed breakdown, you can download my full CV or reach out via the contact form below.</p>
-            <hr>
+            <p class="resume-note">For a detailed breakdown, you can download my full CV or reach out via the contact form below.</p>
         </section>
 
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>Have a project in mind or looking to collaborate? Drop a message below.</p>
+        <section id="contact" class="portfolio-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-text">Have a project in mind or looking to collaborate? Drop a message below.</p>
             
-            <form action="#" method="POST">
-                <fieldset>
-                    <legend>Contact Form</legend>
+            <form action="#" method="POST" class="contact-form">
+                <fieldset class="form-fieldset">
+                    <legend class="form-legend">Contact Form</legend>
                     
-                    <p>
-                        <label for="name">Full Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                    </p>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name:</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                    </div>
                     
-                    <p>
-                        <label for="email">Email Address:</label><br>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                    </p>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address:</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                    </div>
                     
-                    <p>
-                        <label for="subject">Subject:</label><br>
-                        <select id="subject" name="subject">
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject:</label>
+                        <select id="subject" name="subject" class="form-select">
                             <option value="collaboration">Project Collaboration</option>
                             <option value="mentorship">Mentorship / Speaking</option>
                             <option value="other">General Inquiry</option>
                         </select>
-                    </p>
+                    </div>
                     
-                    <p>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="5" cols="40" placeholder="Type your message here..." required></textarea>
-                    </p>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Type your message here..." required></textarea>
+                    </div>
                     
-                    <button type="submit">Send Message</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </fieldset>
             </form>
         </section>
     </main>
 
-    <footer>
-        <hr>
-        <p>&copy; 2026 Portfolio Project. Built with clean, semantic HTML.</p>
+    <footer class="main-footer">
+        <p>&copy; 2026 Portfolio Project. Built with clean, semantic HTML & CSS.</p>
     </footer>
 
 </body>
